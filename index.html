@@ -403,6 +403,7 @@
   <main class="safe-bottom-pad md:pb-0">
 
     <!-- ================= HOME ================= -->
+       <!-- ================= HOME ================= -->
     <div id="home" class="page-section active">
       <!-- HERO -->
       <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -439,23 +440,26 @@
               <a href="#" class="btn btn--cta btn-prenota-whatsapp min-w-[240px] py-4 bg-pulse-neon text-white font-bold uppercase tracking-widest text-sm shadow-neon hover:bg-pulse-neonHover transition">
                 Prenota la prima prova
               </a>
-              <a href="#" onclick="scrollToId('come-funziona')" class="btn min-w-[240px] py-4 border border-white/20 text-white font-bold uppercase tracking-widest text-sm hover:bg-white/5 transition backdrop-blur-sm">
-                Scopri come funziona
+              <a href="#" onclick="showPage('ems')" class="btn min-w-[240px] py-4 border border-white/20 text-white font-bold uppercase tracking-widest text-sm hover:bg-white/5 transition backdrop-blur-sm">
+                Scopri il metodo PULSE
               </a>
             </div>
 
+            <p class="text-xs text-white/55 mt-5 uppercase tracking-[0.18em] reveal">
+              20 minuti • su appuntamento • individuale o in coppia • tecnologia professionale
+            </p>
+
             <div class="mt-10 flex flex-wrap items-center justify-center gap-3 text-xs text-white/70 reveal">
-              <span class="px-3 py-2 rounded-full bg-white/5 border border-white/10">20 minuti</span>
-              <span class="px-3 py-2 rounded-full bg-white/5 border border-white/10">Su appuntamento</span>
-              <span class="px-3 py-2 rounded-full bg-white/5 border border-white/10">Individuale o in coppia</span>
-              <span class="px-3 py-2 rounded-full bg-white/5 border border-white/10">Allenamento guidato</span>
+              <span class="px-3 py-2 rounded-full bg-white/5 border border-white/10">Studio boutique</span>
+              <span class="px-3 py-2 rounded-full bg-white/5 border border-white/10">Ambiente riservato</span>
+              <span class="px-3 py-2 rounded-full bg-white/5 border border-white/10">Sedute guidate</span>
+              <span class="px-3 py-2 rounded-full bg-white/5 border border-white/10">Metodo e progressione</span>
             </div>
           </div>
         </div>
       </section>
 
       <!-- COS'È EMS -->
-           <!-- COS'È EMS -->
       <section class="py-24 bg-pulse-black border-t border-white/5" id="ems-summary-home">
         <div class="container mx-auto px-6 max-w-6xl">
           <div class="grid lg:grid-cols-12 gap-10 items-center">
@@ -471,21 +475,17 @@
                 Grazie alla stimolazione simultanea di diversi distretti muscolari, la seduta coinvolge fino a circa 300 muscoli tra principali e stabilizzatori, creando un lavoro molto più completo rispetto a una normale attività fisica.
               </p>
 
-              <p class="text-gray-400 mt-4 leading-relaxed copy-justified">
-                Il risultato è una soluzione ideale per chi desidera migliorare tono, forma fisica e qualità corporea ottimizzando il tempo a disposizione.
-              </p>
-
               <div class="mt-8 grid sm:grid-cols-3 gap-4">
                 <div class="glass-card p-5 rounded-xl text-center">
                   <p class="text-white font-bold">20 minuti</p>
-                  <p class="text-sm text-gray-400 mt-2">stimolazione muscolare intensa e guidata</p>
+                  <p class="text-sm text-gray-400 mt-2">stimolazione intensa e guidata</p>
                 </div>
                 <div class="glass-card p-5 rounded-xl text-center">
                   <p class="text-white font-bold">Fino a 300 muscoli</p>
                   <p class="text-sm text-gray-400 mt-2">coinvolti tra principali e stabilizzatori</p>
                 </div>
                 <div class="glass-card p-5 rounded-xl text-center">
-                  <p class="text-white font-bold">Seduta guidata</p>
+                  <p class="text-white font-bold">Seduta personalizzata</p>
                   <p class="text-sm text-gray-400 mt-2">parametri regolati e supervisionati</p>
                 </div>
               </div>
@@ -508,7 +508,6 @@
       </section>
 
       <!-- COME FUNZIONA UNA SEDUTA -->
-           <!-- COME FUNZIONA UNA SEDUTA -->
       <section class="py-24 bg-pulse-dark border-t border-white/5" id="come-funziona">
         <div class="container mx-auto px-6 max-w-6xl">
           <div class="text-center mb-14 reveal">
@@ -518,53 +517,55 @@
 
           <div class="grid lg:grid-cols-12 gap-10 items-start">
             <div class="lg:col-span-7 reveal reveal--left">
-              <div class="space-y-4">
-                <div class="glass-card p-6 rounded-2xl flex gap-4 items-start">
-                  <div class="text-pulse-neon text-xl mt-1"><i class="fas fa-clipboard-check"></i></div>
-                  <div>
-                    <h4 class="text-white font-bold">1) Check iniziale</h4>
-                    <p class="text-sm text-gray-400 leading-relaxed mt-1 copy-justified">
-                      Prima di iniziare definiamo insieme obiettivo, abitudini e livello di partenza, così da impostare la seduta nel modo più coerente possibile.
-                    </p>
-                    <p class="text-sm text-gray-400 leading-relaxed mt-2 copy-justified">
-                      Quando utile, il check può essere supportato anche dall’analisi della composizione corporea tramite <span class="text-white font-semibold">eBIODY Coach</span>.
-                    </p>
+              <div class="space-y-6">
+                <div class="glass-card p-6 rounded-2xl">
+                  <div class="flex items-start gap-4">
+                    <div class="text-3xl font-extrabold text-pulse-neon leading-none">01</div>
+                    <div>
+                      <h4 class="text-white font-bold">Check iniziale</h4>
+                      <p class="text-sm text-gray-400 leading-relaxed mt-2 copy-justified">
+                        Prima di iniziare definiamo insieme obiettivo, abitudini e livello di partenza, così da impostare il percorso nel modo più coerente possibile.
+                      </p>
+                      <p class="text-sm text-gray-400 leading-relaxed mt-2 copy-justified">
+                        Quando utile, il check può essere supportato anche dall’analisi della composizione corporea tramite <span class="text-white font-semibold">eBIODY Coach</span>.
+                      </p>
+                    </div>
                   </div>
                 </div>
 
-                <div class="glass-card p-6 rounded-2xl flex gap-4 items-start">
-                  <div class="text-pulse-neon text-xl mt-1"><i class="fas fa-shirt"></i></div>
-                  <div>
-                    <h4 class="text-white font-bold">2) Preparazione</h4>
-                    <p class="text-sm text-gray-400 leading-relaxed mt-1 copy-justified">
-                      Viene indossata la tuta tecnica EMS, progettata per trasmettere gli impulsi muscolari in modo preciso e uniforme.
-                    </p>
-                    <p class="text-sm text-gray-400 leading-relaxed mt-2 copy-justified">
-                      I parametri vengono impostati e regolati in base al tuo livello e alle tue sensazioni.
-                    </p>
+                <div class="glass-card p-6 rounded-2xl">
+                  <div class="flex items-start gap-4">
+                    <div class="text-3xl font-extrabold text-pulse-neon leading-none">02</div>
+                    <div>
+                      <h4 class="text-white font-bold">Preparazione</h4>
+                      <p class="text-sm text-gray-400 leading-relaxed mt-2 copy-justified">
+                        Viene indossata la tuta tecnica EMS, progettata per trasmettere gli impulsi muscolari in modo preciso e uniforme, con parametri impostati in base alle tue caratteristiche.
+                      </p>
+                    </div>
                   </div>
                 </div>
 
-                <div class="glass-card p-6 rounded-2xl flex gap-4 items-start">
-                  <div class="text-pulse-neon text-xl mt-1"><i class="fas fa-bolt"></i></div>
-                  <div>
-                    <h4 class="text-white font-bold">3) Seduta EMS</h4>
-                    <p class="text-sm text-gray-400 leading-relaxed mt-1 copy-justified">
-                      La seduta dura circa <span class="text-white font-semibold">20 minuti</span> e permette di coinvolgere simultaneamente i principali gruppi muscolari del corpo.
-                    </p>
-                    <p class="text-sm text-gray-400 leading-relaxed mt-2 copy-justified">
-                      Durante tutta la sessione il trainer regola intensità e parametri in tempo reale per mantenere il lavoro efficace, controllato e personalizzato.
-                    </p>
+                <div class="glass-card p-6 rounded-2xl">
+                  <div class="flex items-start gap-4">
+                    <div class="text-3xl font-extrabold text-pulse-neon leading-none">03</div>
+                    <div>
+                      <h4 class="text-white font-bold">Seduta EMS</h4>
+                      <p class="text-sm text-gray-400 leading-relaxed mt-2 copy-justified">
+                        La seduta dura circa 20 minuti e permette di coinvolgere simultaneamente i principali gruppi muscolari del corpo, con intensità regolata in tempo reale dal trainer.
+                      </p>
+                    </div>
                   </div>
                 </div>
 
-                <div class="glass-card p-6 rounded-2xl flex gap-4 items-start">
-                  <div class="text-pulse-neon text-xl mt-1"><i class="fas fa-route"></i></div>
-                  <div>
-                    <h4 class="text-white font-bold">4) Fine seduta</h4>
-                    <p class="text-sm text-gray-400 leading-relaxed mt-1 copy-justified">
-                      A fine sessione valutiamo le sensazioni, definiamo il ritmo delle sedute successive e impostiamo la progressione del percorso.
-                    </p>
+                <div class="glass-card p-6 rounded-2xl">
+                  <div class="flex items-start gap-4">
+                    <div class="text-3xl font-extrabold text-pulse-neon leading-none">04</div>
+                    <div>
+                      <h4 class="text-white font-bold">Progressione</h4>
+                      <p class="text-sm text-gray-400 leading-relaxed mt-2 copy-justified">
+                        A fine sessione valutiamo le sensazioni, definiamo il ritmo delle sedute successive e impostiamo la progressione del percorso nel tempo.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -594,7 +595,6 @@
       </section>
 
       <!-- TECNOLOGIA SUMMARY -->
-            <!-- TECNOLOGIA SUMMARY -->
       <section class="py-24 bg-pulse-black border-t border-white/5" id="tecnologia-summary-home">
         <div class="container mx-auto px-6 max-w-6xl">
           <div class="grid lg:grid-cols-12 gap-10 items-center">
@@ -610,19 +610,7 @@
               <h3 class="text-3xl md:text-4xl font-bold text-white">Strumenti professionali per un servizio di qualità</h3>
 
               <p class="text-gray-400 mt-4 leading-relaxed copy-justified">
-                La qualità di una seduta EMS non dipende solo dal metodo, ma anche dalla tecnologia utilizzata.
-              </p>
-
-              <p class="text-gray-400 mt-4 leading-relaxed copy-justified">
-                Per questo PULSE utilizza attrezzature professionali riconosciute a livello internazionale per affidabilità, precisione e qualità costruttiva.
-              </p>
-
-              <p class="text-gray-400 mt-4 leading-relaxed copy-justified">
-                Per la stimolazione muscolare lo studio utilizza <span class="text-white font-semibold">miha bodytec m.ove</span>, sviluppata da uno dei marchi leader mondiali nel settore EMS, sinonimo di qualità e affidabilità.
-              </p>
-
-              <p class="text-gray-400 mt-4 leading-relaxed copy-justified">
-                A supporto del percorso, il check iniziale e i controlli periodici possono essere affiancati anche da <span class="text-white font-semibold">eBIODY Coach ZM</span>, uno strumento professionale per l’analisi della composizione corporea.
+                La qualità di una seduta EMS non dipende solo dal metodo, ma anche dalla precisione degli strumenti utilizzati. Per questo PULSE integra tecnologie selezionate per offrire un’esperienza più controllata, evoluta e professionale.
               </p>
 
               <div class="mt-8 grid sm:grid-cols-2 gap-4">
@@ -647,14 +635,13 @@
       </section>
 
       <!-- PER CHI È PULSE -->
-           <!-- PER CHI È PULSE -->
       <section class="py-24 bg-pulse-dark border-t border-white/5" id="per-chi-e-pulse">
         <div class="container mx-auto px-6 max-w-6xl">
           <div class="text-center mb-14 reveal">
             <h2 class="text-sm font-bold text-pulse-neon uppercase tracking-widest mb-2">Per chi è PULSE</h2>
-            <h3 class="text-3xl md:text-4xl font-bold text-white">Un metodo efficace per chi vuole migliorare la propria forma fisica</h3>
+            <h3 class="text-3xl md:text-4xl font-bold text-white">Per chi cerca qualità, metodo e attenzione reale</h3>
             <p class="text-gray-400 mt-4 max-w-3xl mx-auto copy-justified md:text-center">
-              Un percorso guidato, efficiente e strutturato per chi vuole lavorare con metodo, qualità e continuità.
+              PULSE è pensato per chi vuole migliorare la propria forma fisica in un ambiente curato, riservato e professionale, con un percorso seguito e costruito nel tempo.
             </p>
           </div>
 
@@ -669,37 +656,30 @@
                 </div>
 
                 <div class="glass-card p-6 rounded-2xl">
-                  <h4 class="text-white font-bold">Per chi vuole tonificare</h4>
+                  <h4 class="text-white font-bold">Per chi non vuole soluzioni standard</h4>
                   <p class="text-sm text-gray-400 mt-3 leading-relaxed copy-justified">
-                    La stimolazione muscolare intensa aiuta a migliorare tono, compattezza e qualità corporea con un percorso strutturato e progressivo.
+                    Ogni seduta è guidata e personalizzata, con parametri regolati in base alla risposta del corpo e all’obiettivo del percorso.
                   </p>
                 </div>
 
                 <div class="glass-card p-6 rounded-2xl">
-                  <h4 class="text-white font-bold">Per chi vuole dimagrire</h4>
+                  <h4 class="text-white font-bold">Per chi vuole tonificare e migliorare la qualità corporea</h4>
                   <p class="text-sm text-gray-400 mt-3 leading-relaxed copy-justified">
-                    Inserita in un percorso regolare, la seduta EMS può supportare la riduzione della massa grassa e la ricomposizione corporea.
+                    La stimolazione muscolare intensa può supportare tono, compattezza, ricomposizione corporea e una migliore percezione del proprio corpo.
                   </p>
                 </div>
 
                 <div class="glass-card p-6 rounded-2xl">
-                  <h4 class="text-white font-bold">Per chi vuole lavorare con metodo</h4>
+                  <h4 class="text-white font-bold">Per chi cerca un servizio più seguito</h4>
                   <p class="text-sm text-gray-400 mt-3 leading-relaxed copy-justified">
-                    Ogni seduta è guidata e personalizzata, con intensità regolata in base alla risposta del corpo.
+                    PULSE lavora su appuntamento, individualmente o in coppia, per garantire attenzione reale, controllo e qualità del servizio.
                   </p>
                 </div>
 
-                <div class="glass-card p-6 rounded-2xl">
-                  <h4 class="text-white font-bold">Per chi cerca un ambiente riservato</h4>
+                <div class="glass-card p-6 rounded-2xl md:col-span-2">
+                  <h4 class="text-white font-bold">Per chi pretende un percorso serio</h4>
                   <p class="text-sm text-gray-400 mt-3 leading-relaxed copy-justified">
-                    PULSE è uno studio boutique: sedute su appuntamento, individualmente o in coppia, in un ambiente curato e tranquillo.
-                  </p>
-                </div>
-
-                <div class="glass-card p-6 rounded-2xl">
-                  <h4 class="text-white font-bold">Per chi vuole un percorso serio</h4>
-                  <p class="text-sm text-gray-400 mt-3 leading-relaxed copy-justified">
-                    Il percorso parte da un check iniziale e può essere supportato da strumenti come eBIODY Coach per monitorare l’evoluzione nel tempo.
+                    Il percorso parte da un check iniziale e può essere supportato da strumenti professionali come eBIODY Coach per monitorare l’evoluzione nel tempo e dare più concretezza ai risultati.
                   </p>
                 </div>
               </div>
@@ -745,7 +725,7 @@
         <div class="container mx-auto px-6 max-w-6xl">
           <div class="grid md:grid-cols-2 gap-0 bg-[#111] rounded-3xl overflow-hidden border border-white/5 shadow-2xl reveal">
             <div class="p-10 md:p-14 flex flex-col justify-center">
-              <h2 class="text-3xl font-bold mb-2">Contattaci.</h2>
+              <h2 class="text-3xl font-bold mb-2">Parlaci del tuo obiettivo.</h2>
               <p class="text-gray-400 mb-8" id="contact-slogan"></p>
 
               <div class="space-y-8">
@@ -803,81 +783,65 @@
             </div>
           </div>
 
-          <footer class="text-center text-xs text-white/40 mt-10 reveal">
-            <p>© <span id="year"></span> <span id="studio-name"></span> • <span id="studio-address-foot"></span></p>
-            <div class="mt-3 flex flex-col md:flex-row items-center justify-center gap-3 text-white/40">
-              <span>P. IVA: <span id="footer-piva"></span></span>
-              <span class="hidden md:inline">•</span>
-              <span>PEC: <a id="footer-pec" class="hover:text-pulse-neon transition" href="#">—</a></span>
-              <span class="hidden md:inline">•</span>
-              <a id="footer-ig" href="#" target="_blank" class="hover:text-pulse-neon transition inline-flex items-center gap-2">
-                <i class="fab fa-instagram"></i> Instagram (in arrivo)
-              </a>
-            </div>
-            <p class="mt-3 text-white/30">Privacy / Cookie (aggiungile quando pronte).</p>
-          </footer>
-        </div>
-      </section>
-                  <section class="section-footer py-8">
-        <div class="container mx-auto px-6 max-w-6xl">
-          <div class="grid md:grid-cols-3 gap-8 text-xs text-white/50">
-            
-            <div>
-              <p class="text-white/80 font-semibold uppercase tracking-widest text-[10px] mb-3">Navigazione</p>
-              <div class="space-y-2">
-                <p><a href="#" onclick="showPage('home')" class="section-footer-link">Home</a></p>
-                <p><a href="#" onclick="showPage('ems')" class="section-footer-link">EMS</a></p>
-                <p><a href="#" onclick="showPage('technology')" class="section-footer-link">Tecnologia</a></p>
-                <p><a href="#" onclick="showPage('packages')" class="section-footer-link">Percorsi</a></p>
-                <p><a href="#" onclick="showPage('contacts')" class="section-footer-link">Contatti</a></p>
-                <p><a href="#" onclick="scrollToId('faq')" class="section-footer-link">FAQ</a></p>
+          <section class="section-footer py-8 mt-10 reveal">
+            <div class="grid md:grid-cols-3 gap-8 text-xs text-white/50">
+              
+              <div>
+                <p class="text-white/80 font-semibold uppercase tracking-widest text-[10px] mb-3">Navigazione</p>
+                <div class="space-y-2">
+                  <p><a href="#" onclick="showPage('home')" class="section-footer-link">Home</a></p>
+                  <p><a href="#" onclick="showPage('ems')" class="section-footer-link">EMS</a></p>
+                  <p><a href="#" onclick="showPage('technology')" class="section-footer-link">Tecnologia</a></p>
+                  <p><a href="#" onclick="showPage('packages')" class="section-footer-link">Percorsi</a></p>
+                  <p><a href="#" onclick="showPage('contacts')" class="section-footer-link">Contatti</a></p>
+                  <p><a href="#" onclick="scrollToId('faq')" class="section-footer-link">FAQ</a></p>
+                </div>
+              </div>
+
+              <div>
+                <p class="text-white/80 font-semibold uppercase tracking-widest text-[10px] mb-3">Contatti</p>
+                <div class="space-y-2">
+                  <p class="footer-address"></p>
+                  <p><span class="footer-phone"></span></p>
+                  <p><a href="#" class="section-footer-link footer-email-link"><span class="footer-email"></span></a></p>
+                  <p><a href="#" class="section-footer-link footer-pec-link"><span class="footer-pec-text"></span></a></p>
+                  <p>P. IVA: <span class="footer-piva-text"></span></p>
+                  <p><span class="footer-hours"></span></p>
+                </div>
+              </div>
+
+              <div>
+                <p class="text-white/80 font-semibold uppercase tracking-widest text-[10px] mb-3">Social</p>
+                <div class="flex items-center gap-4 text-base mb-3">
+                  <a href="#" target="_blank" class="section-footer-link footer-wa-link" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                  <a href="#" target="_blank" class="section-footer-link footer-ig-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="#" target="_blank" class="section-footer-link footer-fb-link" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#" target="_blank" class="section-footer-link footer-tt-link" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                  </a>
+                </div>
+                <p class="text-white/35 leading-relaxed">
+                  Su appuntamento • individuale o in coppia
+                </p>
               </div>
             </div>
 
-            <div>
-              <p class="text-white/80 font-semibold uppercase tracking-widest text-[10px] mb-3">Contatti</p>
-              <div class="space-y-2">
-                <p class="footer-address"></p>
-                <p><span class="footer-phone"></span></p>
-                <p><a href="#" class="section-footer-link footer-email-link"><span class="footer-email"></span></a></p>
-                <p><a href="#" class="section-footer-link footer-pec-link"><span class="footer-pec-text"></span></a></p>
-                <p>P. IVA: <span class="footer-piva-text"></span></p>
-                <p><span class="footer-hours"></span></p>
-              </div>
-            </div>
-
-            <div>
-              <p class="text-white/80 font-semibold uppercase tracking-widest text-[10px] mb-3">Social</p>
-              <div class="flex items-center gap-4 text-base mb-3">
-                <a href="#" target="_blank" class="section-footer-link footer-wa-link" aria-label="WhatsApp">
-                  <i class="fab fa-whatsapp"></i>
-                </a>
-                <a href="#" target="_blank" class="section-footer-link footer-ig-link" aria-label="Instagram">
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" target="_blank" class="section-footer-link footer-fb-link" aria-label="Facebook">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" target="_blank" class="section-footer-link footer-tt-link" aria-label="TikTok">
-                  <i class="fab fa-tiktok"></i>
-                </a>
-              </div>
-              <p class="text-white/35 leading-relaxed">
-                Su appuntamento • individuale o in coppia
+            <div class="mt-8 pt-5 border-t border-white/5 flex flex-col items-center justify-center gap-3">
+              <img id="footer-logo-small-home" src="" alt="PULSE EMS Studio" class="footer-logo-small" />
+              <p class="text-[11px] text-white/30 text-center">
+                © <span class="footer-year"></span> <span class="footer-studio-name"></span> — Tutti i diritti riservati
               </p>
             </div>
-          </div>
-
-          <div class="mt-8 pt-5 border-t border-white/5 flex flex-col items-center justify-center gap-3">
-            <img id="footer-logo-small-home" src="" alt="PULSE EMS Studio" class="footer-logo-small" />
-            <p class="text-[11px] text-white/30 text-center">
-              © <span class="footer-year"></span> <span class="footer-studio-name"></span> — Tutti i diritti riservati
-            </p>
-          </div>
+          </section>
         </div>
       </section>
     </div>
-
     <!-- ================= EMS ================= -->
        <!-- ================= EMS ================= -->
     <div id="ems" class="page-section pt-24 bg-pulse-black">
