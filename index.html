@@ -1676,15 +1676,6 @@
       document.getElementById("contact-hours-2-page").innerText = DATI_SITO.orariPomeriggio;
       document.getElementById("contact-slogan-page").innerText = DATI_SITO.slogan;
 
-      // FOOTER HOME
-      document.getElementById("year").innerText = new Date().getFullYear();
-      document.getElementById("studio-name").innerText = DATI_SITO.nomeStudio;
-      document.getElementById("studio-address-foot").innerText = DATI_SITO.indirizzo;
-      document.getElementById("footer-piva").innerText = DATI_SITO.piva;
-      const pecLink = document.getElementById("footer-pec");
-      pecLink.innerText = DATI_SITO.pec;
-      pecLink.href = `mailto:${DATI_SITO.pec}`;
-      document.getElementById("footer-ig").href = DATI_SITO.instagramUrl;
             // SECTION FOOTERS
       document.querySelectorAll(".footer-address").forEach(el => {
         el.innerText = DATI_SITO.indirizzo;
