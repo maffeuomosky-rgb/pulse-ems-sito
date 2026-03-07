@@ -1624,40 +1624,68 @@
   </div>
 
   <script>
-    const FAQ_DATA = [
-      {
-        q: "Cos’è l’EMS e come funziona?",
-        a: "L’EMS è un metodo di allenamento che utilizza impulsi controllati per attivare in modo mirato i gruppi muscolari. Durante la seduta esegui esercizi guidati mentre la stimolazione aumenta l’efficacia del lavoro muscolare."
-      },
-      {
-        q: "Quanto dura una seduta?",
-        a: "La sessione EMS prevede circa 20 minuti di lavoro effettivo, con una gestione completa del servizio che può arrivare a 30–40 minuti."
-      },
-      {
-        q: "Quante volte a settimana devo fare EMS?",
-        a: "Generalmente 1–2 sedute a settimana sono sufficienti per ottenere risultati. La frequenza ideale dipende da obiettivo, livello di allenamento e stile di vita."
-      },
-      {
-        q: "Che risultati posso aspettarmi e in quanto tempo?",
-        a: "Molti clienti percepiscono miglioramenti su tono, postura e attivazione già nelle prime settimane. I risultati più evidenti arrivano con costanza e un programma coerente."
-      },
-      {
-        q: "L’EMS aiuta a dimagrire?",
-        a: "Sì. L’EMS aumenta l’attivazione muscolare e il dispendio energetico, supportando nel tempo tono, metabolismo e qualità corporea."
-      },
-      {
-        q: "L’allenamento EMS è doloroso?",
-        a: "No. È un lavoro intenso, ma deve rimanere sempre controllato e gestibile. Gli impulsi vengono regolati progressivamente."
-      },
-      {
-        q: "È sicuro? Chi mi segue durante la sessione?",
-        a: "Sì, è sicuro se eseguito con metodo e controllo. Da PULSE ogni sessione è seguita in 1:1 oppure 1:2 con supervisione diretta del trainer."
-      },
-      {
-        q: "È adatto a principianti?",
-        a: "Sì. L’EMS è modulabile e progressiva. Partiamo in modo graduale e adattiamo intensità ed esercizi al tuo livello."
-      }
-    ];
+const FAQ_DATA = [
+  {
+    q: "Cos’è l’EMS e come funziona?",
+    a: "L’EMS (Electro Muscular Stimulation) è un metodo di allenamento che utilizza impulsi controllati per attivare in modo mirato i gruppi muscolari. Durante la seduta esegui esercizi guidati mentre la stimolazione aumenta l’efficacia del lavoro muscolare, con parametri regolati in base al tuo livello e al tuo obiettivo."
+  },
+  {
+    q: "Quanto dura una seduta?",
+    a: "La sessione EMS prevede circa 20 minuti di lavoro effettivo, con una gestione completa del servizio (accoglienza, preparazione, settaggio, allenamento e conclusione) che può arrivare a 30–40 minuti. Questo standard ci permette di mantenere alta la qualità e curare ogni dettaglio."
+  },
+  {
+    q: "Quante volte a settimana devo fare EMS?",
+    a: "Generalmente 1–2 sedute a settimana sono sufficienti per ottenere risultati. La frequenza ideale dipende da obiettivo, livello di allenamento e stile di vita. Impostiamo un percorso progressivo: meno improvvisazione, più efficacia e continuità."
+  },
+  {
+    q: "Che risultati posso aspettarmi e in quanto tempo?",
+    a: "Molti clienti percepiscono miglioramenti su tono, postura e attivazione già nelle prime settimane. I risultati più evidenti arrivano con costanza e un programma coerente. Per questo partiamo dal check iniziale: obiettivo chiaro, piano chiaro, progressione chiara."
+  },
+  {
+    q: "L’EMS aiuta a dimagrire?",
+    a: "Sì. L’EMS aiuta a dimagrire perché aumenta l’attivazione muscolare e quindi il dispendio energetico, migliorando nel tempo tono, metabolismo e qualità corporea. Il punto forte è che lavora in modo intenso e mirato anche su aree difficili, supportando la riduzione della massa grassa e la ricomposizione corporea (meno grasso, più tono). Per ottenere il massimo risultato, abbiniamo l’allenamento a indicazioni pratiche su abitudini e ritmo settimanale: così il percorso diventa efficace, misurabile e sostenibile."
+  },
+  {
+    q: "È adatto a principianti o a chi riparte da zero?",
+    a: "Sì. L’EMS è completamente modulabile: partiamo in modo graduale e sicuro, adattando intensità ed esercizi alla tua condizione. È ideale se vuoi un percorso seguito, controllato e con progressione logica."
+  },
+  {
+    q: "È adatto anche a sportivi?",
+    a: "Assolutamente. L’EMS è utile come supporto a performance, forza, core e prevenzione. Pianifichiamo le sedute in modo intelligente rispetto ai tuoi allenamenti, evitando sovraccarichi e lavorando su ciò che serve davvero."
+  },
+  {
+    q: "L’allenamento EMS è doloroso?",
+    a: "No. È un lavoro intenso, ma deve rimanere sempre controllato e gestibile. Regoliamo gli impulsi progressivamente in base alla tua tolleranza e all’obiettivo: deve essere efficace, non traumatico."
+  },
+  {
+    q: "È sicuro? Chi mi segue durante la sessione?",
+    a: "Sì, è sicuro se eseguito con metodo e controllo. Da PULSE EMS STUDIO ogni sessione è seguita in 1:1 oppure 1:2, sempre con supervisione diretta del trainer. L’intensità, i parametri e gli esercizi vengono impostati in base a obiettivo, livello e sensazioni in tempo reale. Questo è il motivo per cui la qualità è superiore: niente protocolli generici o standard uguali per tutti, ma una seduta calibrata su di te, con progressione intelligente e focus sui risultati."
+  },
+  {
+    q: "Ci sono controindicazioni?",
+    a: "Sì. Alcune condizioni richiedono valutazione o esclusione (ad esempio pacemaker/impianti elettronici, gravidanza, condizioni acute o specifiche patologie). Prima di iniziare facciamo un’anamnesi completa e, se necessario, richiediamo indicazione medica."
+  },
+  {
+    q: "Cosa devo portare? Devo cambiarmi?",
+    a: "Per svolgere l’EMS nel modo corretto è fortemente consigliato un vestiario specifico (underwear tecnico) progettato per questa attività. È acquistabile direttamente in studio e potrai utilizzarlo per tutto il tuo percorso. Questo abbigliamento è studiato per garantire comfort, igiene e performance, migliorando la qualità della stimolazione e la resa della seduta. In pratica: ti alleni meglio, in modo più stabile e più professionale."
+  },
+  {
+    q: "Devo essere a digiuno? Posso allenarmi dopo aver mangiato?",
+    a: "Consigliamo di evitare pasti abbondanti subito prima della seduta. L’ideale è allenarsi a distanza di qualche ora da un pasto importante o dopo uno snack leggero. Ti diamo indicazioni pratiche in base agli orari e al tuo obiettivo."
+  },
+  {
+    q: "Il giorno dopo avrò dolori muscolari?",
+    a: "È possibile, soprattutto nelle prime sedute o quando aumentiamo l’intensità: è una risposta normale del muscolo a un lavoro nuovo o più profondo. In ogni caso, il percorso è strutturato in modo progressivo e controllato: regoliamo carichi e stimolazione per farti migliorare con continuità, rispettando recupero e adattamento."
+  },
+  {
+    q: "Posso fare EMS se ho mal di schiena o problemi posturali?",
+    a: "Spesso sì, con un percorso impostato correttamente. Lavoriamo su core, stabilità e rinforzo mirato, con particolare attenzione alla tecnica e alle sensazioni. In presenza di dolore importante o diagnosi specifiche, valutiamo insieme e ci coordiniamo con lo specialista se necessario."
+  },
+  {
+    q: "Come funziona il check iniziale e come prenoto?",
+    a: "Il percorso parte con un check iniziale: ascoltiamo obiettivo e abitudini, valutiamo il punto di partenza e definiamo la strategia più adatta. Per prenotare puoi contattarci direttamente: ti rispondiamo in modo rapido e ti proponiamo le opzioni migliori in base alle tue disponibilità."
+  }
+];
 
     window.addEventListener("DOMContentLoaded", () => {
       // HERO + HOME
