@@ -161,11 +161,14 @@
       will-change: transform;
     }
 
-    .glass-card:hover {
-      border-color: rgba(255, 0, 127, 0.35);
-      box-shadow: 0 0 18px rgba(255, 0, 127, 0.12);
-      transform: translateY(-6px) scale(1.01);
-    }
+    .glass-card {
+transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.glass-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+}
 
 .faq-answer {
   max-height: 0;
@@ -489,7 +492,7 @@
 
       <!-- Motto -->
       <p class="text-sm md:text-base font-semibold uppercase tracking-[0.24em] text-white/75 mb-5 reveal">
-        PULSE — Accendi il cambiamento.
+        PULSE — Dai impulso al cambiamento.
       </p>
 
       <!-- Titolo -->
@@ -536,11 +539,11 @@
               <h3 class="text-3xl md:text-4xl font-bold text-white">Stimolazione muscolare total body in soli 20 minuti</h3>
 
               <p class="text-gray-400 mt-4 leading-relaxed copy-justified">
-                L’EMS è una tecnologia che utilizza impulsi muscolari controllati per stimolare in modo mirato diversi gruppi muscolari del corpo, permettendo una seduta breve ma estremamente intensa e strutturata.
+                EMS sta per Elettro Mio Stimolazione (o Elettro Stimolazione Muscolare, Electro Muscle Stimulation), una tecnologia che usa impulsi elettrici per indurre contrazioni muscolari profonde, simulando il sistema nervoso centrale.
               </p>
 
               <p class="text-gray-400 mt-4 leading-relaxed copy-justified">
-                Grazie alla stimolazione simultanea di diversi distretti muscolari, la seduta coinvolge fino a circa 300 muscoli tra principali e stabilizzatori, creando un lavoro molto più completo rispetto a una normale attività fisica.
+                Durante la fase EMS questi impulsi vengono trasmessi attraverso una speciale tuta tecnica e gestiti tramite parametri regolabili, impostati in base alle caratteristiche della persona e all’obiettivo del percorso. Questo permette di rendere ogni seduta più controllata, più precisa e realmente personalizzata.
               </p>
 
               <div class="mt-8 grid sm:grid-cols-3 gap-4">
@@ -961,11 +964,11 @@
               </h1>
 
               <p class="text-gray-400 mt-5 leading-relaxed copy-justified">
-                L’EMS, acronimo di Electro Muscle Stimulation, è una tecnologia che utilizza impulsi muscolari controllati per stimolare in modo mirato diversi gruppi muscolari del corpo.
+                EMS sta per Elettro Mio Stimolazione (o Elettro Stimolazione Muscolare, Electro Muscle Stimulation), una tecnologia che usa impulsi elettrici per indurre contrazioni muscolari profonde, simulando il sistema nervoso centrale.
               </p>
 
               <p class="text-gray-400 mt-4 leading-relaxed copy-justified">
-                Durante la seduta questi impulsi vengono trasmessi attraverso una speciale tuta tecnica e regolati dal trainer in base alle caratteristiche della persona e all’obiettivo del percorso, così da rendere ogni sessione più controllata, più precisa e più personalizzata.
+                Durante la fase EMS questi impulsi vengono trasmessi attraverso una speciale tuta tecnica e gestiti tramite parametri regolabili, impostati in base alle caratteristiche della persona e all’obiettivo del percorso. Questo permette di rendere ogni seduta più controllata, più precisa e realmente personalizzata.
               </p>
 
               <div class="mt-8 grid sm:grid-cols-3 gap-4">
@@ -1048,7 +1051,7 @@
             </div>
 
             <div class="glass-card p-7 rounded-2xl reveal">
-              <h4 class="text-white font-bold mb-2">Ricomposizione corporea</h4>
+              <h4 class="text-white font-bold mb-2">Dimagrimento</h4>
               <p class="text-sm text-gray-400 leading-relaxed">
                 Inserita in un percorso regolare, può supportare la riduzione della massa grassa e la ricomposizione corporea.
               </p>
@@ -1062,9 +1065,9 @@
             </div>
 
             <div class="glass-card p-7 rounded-2xl reveal">
-              <h4 class="text-white font-bold mb-2">Circolazione</h4>
+              <h4 class="text-white font-bold mb-2">Aumento della massa muscolare</h4>
               <p class="text-sm text-gray-400 leading-relaxed">
-                La stimolazione muscolare favorisce la microcircolazione e il drenaggio dei tessuti.
+                La stimolazione muscolare attiva contemporaneamente numerosi gruppi muscolari, contribuendo nel tempo allo sviluppo della massa muscolare e all'aumento della forza.
               </p>
             </div>
 
